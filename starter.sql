@@ -1,0 +1,22 @@
+-- SELECT Product_ID,Product_Name,Category_ID FROM Products  WHERE unit_price > 50;
+-- SELECT * FROM Customers WHERE Country LIKE 'Germany';
+-- SELECT * FROM Orders WHERE Customer_ID = 'TOMAS';
+-- SELECT ORDERS.Customer_ID, sum(DETAILS.unit_price) AS SumTotalOrders FROM orders AS ORDERS, Order_Details AS DETAILS GROUP BY ORDERS.Customer_ID;
+-- SELECT Product_Name,unit_price FROM Products ORDER BY unit_price DESC LIMIT 5;
+-- SELECT first_name, Birth_Date FROM Employees WHERE EXTRACT(YEAR FROM Birth_Date) > 1960;
+-- SELECT * FROM Products WHERE units_in_stock = 0;
+-- SELECT AVG(unit_price) AS avg FROM Products;
+-- SELECT sum(quantity * unit_price) FROM Order_Details WHERE Product_ID = 7;
+-- SELECT count(category_name) FROM categories
+-- SELECT *  FROM Products WHERE Discontinued = 1;
+-- SELECT count(Order_Date) as sumNewOrders FROM Orders WHERE EXTRACT(YEAR FROM Order_Date) >= 1997;
+-- SELECT * FROM customers WHERE Contact_Title IN ('Owner', 'CEO')
+-- SELECT Product_Name,unit_price FROM Products ORDER BY unit_price DESC LIMIT 1;
+-- SELECT AVG(AGE(Birth_Date)) FROM Employees
+-- SELECT * FROM customers WHERE phone LIKE '%123%'
+-- SELECT *  FROM Products WHERE Discontinued <> 1 AND units_in_stock < 10;
+-- SELECT MAX(unit_price) AS HighestPrice,MIN(unit_price) AS LowestPrice FROM Products;
+-- SELECT * FROM Orders WHERE Order_Date = '05-05-1997';
+-- SELECT Product_Name, quantity_per_unit FROM Products;
+-- SELECT Product_ID, Product_Name,unit_price FROM Products WHERE unit_price > (SELECT AVG(unit_price) FROM Products);
+-- SELECT count(last_name), city FROM Employees GROUP BY city
